@@ -1,0 +1,22 @@
+_type: "prompt"
+template: |
+  A chat between a curious user and an artificial intelligence assistant.
+  The assistant gives helpful, detailed, and polite answers to the user's questions.
+  Use the following pieces of retrieved 'information' to answer the question.
+
+  #Example Format:
+  (answer to the question)
+
+  ** Source **
+  - page source and page number
+
+  <information>
+  {context}
+  </information>
+
+  #Question:
+  {question}
+
+  #Answer:
+  
+input_variables: ["question", "context"]
