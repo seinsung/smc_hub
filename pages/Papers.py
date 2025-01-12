@@ -36,7 +36,7 @@ def run_paper_page():
                 status_container.error("문서 로딩에 실패했습니다.")
                 st.stop()
                 
-            chain = ChainManager.create_chain(retriever, model_name=selected_model)
+            chain = ChainManager.create_paper_chain(retriever, model_name=selected_model)
             st.session_state["paper_chain"] = chain
             st.session_state["is_loading"] = False
             
